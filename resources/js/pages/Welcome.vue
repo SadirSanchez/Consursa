@@ -1,5 +1,5 @@
 <template>
-    <div class="flex min-h-screen flex-col items-center justify-center bg-gradient-to-br from-orange-100 to-white px-4 text-center">
+    <div class="flex min-h-screen flex-col items-center justify-center bg-gradient-to-br from-white-100 to-white px-4 text-center">
         <div class="max-w-2xl">
             <img src="/images/welcome_photo.svg" alt="Educación" class="w-64 mx-auto mb-6" />
             <h1 class="mb-4 text-5xl font-extrabold text-blue-700">Prepárate para tu próximo empleo como servidor público</h1>
