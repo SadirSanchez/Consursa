@@ -19,11 +19,10 @@ const user = usePage().props.auth.user;
                             Bienvenido a tu panel. Aquí podrás acceder a tus cuestionarios, consultar tus resultados y seguir tu progreso.
                         </p>
 
-                        <!-- Puedes agregar más secciones aquí, como últimos intentos, estadísticas, etc. -->
                         <div class="mt-6 grid gap-6 md:grid-cols-3">
                             <div class="p-4 bg-blue-50 rounded-lg shadow hover:shadow-md transition">
                                 <h2 class="text-lg font-medium text-blue-800 mb-2">Cuestionarios</h2>
-                                <p class="text-sm text-gray-600">Accede a todos los cuestionarios tipo ICFES disponibles.</p>
+                                <p class="text-sm text-gray-600">Accede a todos tus cuestionarios.</p>
                             </div>
                             <div class="p-4 bg-green-50 rounded-lg shadow hover:shadow-md transition">
                                 <h2 class="text-lg font-medium text-green-800 mb-2">Resultados</h2>
