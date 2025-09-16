@@ -14,4 +14,29 @@ class quizzesController extends Controller
     {
         return Inertia::render("quizzes/Index");
     }
+
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function show()
+    {
+        return Inertia::render("quizzes/Show");
+    }
+
+
+    /**
+     * Display the specified resource.
+     */
+    public function result()
+    {
+        return Inertia::render("quizzes/Result");
+    }
+
+    /**
+     * Display the specified resource.
+     */
+    public function history()
+    {
+        return Inertia::render("quizzes/History");
+    }
 }

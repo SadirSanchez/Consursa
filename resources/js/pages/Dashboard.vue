@@ -20,7 +20,8 @@ const user = usePage().props.auth.user;
                         </p>
 
                         <div class="mt-6 grid gap-6 md:grid-cols-3">
-                            <div class="p-4 bg-blue-50 rounded-lg shadow hover:shadow-md transition">
+                            <div class="p-4 bg-blue-50 rounded-lg shadow hover:shadow-md transition"
+                            @click="$inertia.visit('/quizzes')">
                                 <h2 class="text-lg font-medium text-blue-800 mb-2">Cuestionarios</h2>
                                 <p class="text-sm text-gray-600">Accede a todos tus cuestionarios.</p>
                             </div>
