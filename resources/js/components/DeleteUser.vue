@@ -44,23 +44,23 @@ const closeModal = () => {
 
 <template>
     <div class="space-y-6">
-        <HeadingSmall title="Delete account" description="Delete your account and all of its resources" />
+        <HeadingSmall title="Eliminar cuenta" description="Elimina tu cuenta y todos sus recursos" />
         <div class="space-y-4 rounded-lg border border-red-100 bg-red-50 p-4 dark:border-red-200/10 dark:bg-red-700/10">
             <div class="relative space-y-0.5 text-red-600 dark:text-red-100">
-                <p class="font-medium">Warning</p>
-                <p class="text-sm">Please proceed with caution, this cannot be undone.</p>
+                <p class="font-medium">Advertencia</p>
+                <p class="text-sm">Proceda con precaución, esto no se puede deshacer..</p>
             </div>
             <Dialog>
                 <DialogTrigger as-child>
-                    <Button variant="destructive">Delete account</Button>
+                    <Button variant="destructive">Eliminar cuenta</Button>
                 </DialogTrigger>
                 <DialogContent>
                     <form class="space-y-6" @submit="deleteUser">
                         <DialogHeader class="space-y-3">
-                            <DialogTitle>Are you sure you want to delete your account?</DialogTitle>
+                            <DialogTitle>¿Estás seguro de que quieres eliminar tu cuenta?</DialogTitle>
                             <DialogDescription>
-                                Once your account is deleted, all of its resources and data will also be permanently deleted. Please enter your
-                                password to confirm you would like to permanently delete your account.
+                                Una vez eliminada su cuenta, todos sus recursos y datos también se eliminarán permanentemente. Ingrese su contraseña
+                                para confirmar que desea eliminar su cuenta permanentemente.
                             </DialogDescription>
                         </DialogHeader>
 
