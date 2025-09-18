@@ -20,12 +20,12 @@
 
                     <div class="mb-4">
                         <label>Duración minutos</label>
-                        <input v-model="form.duration" type="number" class="mt-1 w-full" />
+                        <input v-model="form.timeLimit" type="number" class="mt-1 w-full" />
                     </div>
 
                     <div class="mb-4">
                         <label>Número de preguntas</label>
-                        <input v-model="form.count" type="number" class="mt-1 w-full" />
+                        <input v-model="form.numQuestions" type="number" class="mt-1 w-full" />
                     </div>
 
                     <div class="flex justify-end gap-2">
@@ -58,8 +58,8 @@ const emits = defineEmits(['close']);
 const form = useForm({
     title: '',
     description: '',
-    duration: '',
-    count: '',
+    timeLimit: '',
+    numQuestions: '',
 });
 
 function close() {

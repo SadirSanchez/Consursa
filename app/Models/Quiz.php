@@ -9,7 +9,7 @@ class Quiz extends Model
     protected $fillable = [
         'title',
         'description',
-        'duration',
-        'questions_count',
+        'timeLimit',
+        'numQuestions',
     ];
 }
