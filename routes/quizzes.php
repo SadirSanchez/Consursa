@@ -10,6 +10,10 @@ Route::middleware('auth')->group(function () {
     Route::get('/quizzes', [quizzesController::class, 'index'])
         ->name('quizzes.index');
 
+    Route::get('/quizzes/create', function () {
+        return Inertia::render('quizzes/Create');
+    })->name('quizzes.create');
+
     Route::get('/quizzes/{quiz}', [quizzesController::class, 'show'])
         ->name('quizzes.show');
 
