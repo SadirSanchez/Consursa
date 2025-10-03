@@ -1,12 +1,14 @@
 import '../css/app.css';
 
 import { createInertiaApp } from '@inertiajs/vue3';
+import { AllCommunityModule, ModuleRegistry } from 'ag-grid-community';
 import { resolvePageComponent } from 'laravel-vite-plugin/inertia-helpers';
 import type { DefineComponent } from 'vue';
 import { createApp, h } from 'vue';
 import { ZiggyVue } from 'ziggy-js';
+// Register all AG Grid community modules...
 import { initializeTheme } from './composables/useAppearance';
-
+ModuleRegistry.registerModules([AllCommunityModule]);
 // Extend ImportMeta interface for Vite...
 declare module 'vite/client' {
     interface ImportMetaEnv {
